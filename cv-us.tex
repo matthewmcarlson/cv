@@ -1,0 +1,126 @@
+% LaTeX Curriculum Vitae Template, Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org> http://jblevins.org/projects/cv-template/
+% You may use use this document as a template to create your own CV and you may redistribute the source code freely. No attribution is required in any resulting documents. I do ask that you please leave this notice and the above URL in the source code if you choose to redistribute this file.
+\documentclass[letterpaper]{article}
+\usepackage{hyperref, geometry}
+% Comment the following lines to use the default Computer Modern font instead of the Palatino font provided by the mathpazo package. Remove the 'osf' bit if you don't like the old style figures.
+\usepackage[T1]{fontenc}\usepackage[sc,osf]{mathpazo}
+
+\def\name{Matthew M. Carlson}% Set your name here
+\def\footerlink{} % Replace this with a link to your CV if you like, or set it empty (as in \def\footerlink{}) to remove the link in the footer:
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {computer science, software engineer, programming, distributed systems, big data, hardware, software},
+  pdftitle = {\name: Matthew M. Carlson},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={8.5in, 11in},
+  left=1.0in,
+  right=1.0in,
+  top=.25in
+}
+
+\pagestyle{myheadings}\markright{\name}\thispagestyle{empty}% Customize page headers
+\usepackage{sectsty}\sectionfont{\rmfamily\mdseries\Large}\subsectionfont{\rmfamily\mdseries\itshape\large}% Custom section fonts
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+\setlength\parindent{0em}% Don't indent paragraphs.
+\renewenvironment{itemize}{\begin{list}{}{\setlength{\leftmargin}{1.5em}}}{\end{list}}% Make lists without bullets
+\begin{document}
+
+{\huge \name}% Place name at left. Alternatively, print name centered and bold: \centerline{\huge \bf \name}
+\vspace{0.25in}
+
+\begin{minipage}{0.45\linewidth}
+	2081 NW Everett St. \\
+	Portland OR 97209
+\end{minipage}
+\begin{minipage}{0.45\linewidth}
+	\begin{tabular}{ll}
+	Phone: & (503) 807-0699 \\
+	Email: & \href{mailto:matthew.m.carlson@gmail.com}{\tt matthew.m.carlson@gmail.com} \\
+  \end{tabular}
+\end{minipage}
+
+
+%\section*{Personal}
+
+%\begin{itemize}
+%\item Born on November 7, 1989 in Portland, Oregon
+%\item 
+%\end{itemize}
+
+
+\section*{Education}
+
+\begin{itemize}
+  \item Reed College: B.A. in Mathematics, 2012
+  \item Stanford University: Attended for summer term, 2007
+  \item Portland State University: Took classes as part of a dual credit program, 2006-2007
+\end{itemize}
+
+
+\section*{Employment}% and Volunteering}
+
+\begin{itemize}
+\item Reed Department of Mathematics: Linux Lab Systems Administrator, September 2010--May 2012
+\item Reed Research Reactor: Operations supervisor, September 2009--May 2012
+\item Reed College Computer User Services: Media Lab Consultant, September 2009---September 2011
+\item New Century Players: Lighting Designer, 2008
+\end{itemize}
+
+\section*{Experience}%\subsection*{Computers}
+
+\begin{itemize}
+\item Senior Thesis at Reed College: Euclidean Embedding Of Network Location Data: Design And Use, 2012
+\item Designed and implemented a Moodle course management system for Rex Putnam high-school, 2007-2008
+%\item Something about doing CS stuff at reed. (CS=Math)...
+%\item B.A. in Mathematics (computer science is under the Department of Mathematics at Reed College) (2012)
+%\item Linux Administrator, Polytopia/Reed College Department of Mathematics (2010-present)
+%\item Member of OMSCR --Reed's brand new computer science research team (2010 --present)
+%\item Media Lab Consultant for Computer User Services of Reed College (2009-present)
+%\item Administrated Elowel.org, a blogging community (2006)
+\item Took classes covering Java, Erlang, C, %machine code, batch/BASH scripting, 
+hardware and software repair and troubleshooting
+\item Work at Computer User Services included using the Adobe Creative Suite, Moodle, coding HTML and CSS, and general Mac OS and Windows suupport
+\item While working at Reed Research Reactor was promoted to senior reactor operator in 2010 and operations supervisor in 2011
+\item As a reactor operator, gave public tours and provided training for license candidates (as well as senior reactor operator candidates after 2010 promotion)
+%Windows, Macintosh, 
+%\item Experience running a web server administration
+%\end{itemize}%\subsection*{Science}\begin{itemize}
+%\item Expected B.A. in Physics (2012, expected)
+%\item Employed as a Senior Reactor Operator at the Reed Research Reactor (2009-present)
+%\item Two years of college level labratory science classes (2008-present)
+%\item Two years of advanced placement labratory science classes (2006-2008)
+\end{itemize}
+
+%\section*{References}
+%
+%\begin{itemize}
+%\item Available upon request
+%\end{itemize}
+
+
+\bigskip
+
+% Footer
+\begin{center}
+  \begin{footnotesize}
+    Last updated: \today \\
+    \href{\footerlink}{\texttt{\footerlink}}
+  \end{footnotesize}
+\end{center}
+
+\end{document}
